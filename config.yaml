@@ -71,7 +71,9 @@ proxy-groups:
 ####################################################################################################
 proxy-providers:
   mine:
-    type: file
+    type: http
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/tony-sung/clash-meta-configuration/main/subscription/mine.yaml'
+    interval: 1800
     path: subscription/mine.yaml
     health-check:
       enable: true
