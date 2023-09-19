@@ -54,6 +54,13 @@ external-ui: /usr/share/yacd-meta/
 # ALWAYS set a secret if RESTful API is listening on 0.0.0.0
 # secret: ""
 
+# Menual GeoData custom url
+geox-url:
+  geoip: "https://ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  geosite: "https://ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/Country.mmdb"
+
+
 proxy-groups:
   - name: PROXY
     type: select
