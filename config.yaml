@@ -105,10 +105,10 @@ rules:
   - GEOIP,lan,DIRECT,no-resolve
   - GEOIP,cn,DIRECT,no-resolve
   - GEOSITE,category-ads-all,REJECT
-  - DOMAIN,www.bing.com,GLOBAL
-  - DOMAIN,sydney.bing.com,GLOBAL
-  - GEOSITE,github,GLOBAL
+  - DOMAIN,www.bing.com,PROXY
+  - DOMAIN,sydney.bing.com,PROXY
+  - GEOSITE,github,PROXY
   - GEOSITE,microsoft,DIRECT
-  - GEOSITE,google,GLOBAL
+  - GEOSITE,google,PROXY
   - GEOSITE,cn,DIRECT
-  - MATCH,GLOBAL
+  - MATCH,PROXY
