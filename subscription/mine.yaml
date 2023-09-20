@@ -9,3 +9,5 @@ proxies:
   - {"name": "[WARP]plus", "type": "wireguard", "server": "[2606:4700:d0::877c:703b:2578:d9ec]", "port": 942, "udp": true, "ip": "172.16.0.2", "ipv6": "2606:4700:110:80ce:1cba:fcdb:281:693c", "private-key": "eND7fUqICzUE5kHzpipVDxvMxy/4gP/NxyuyoJLvpUY=", "public-key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=", "mtu": 1280}
   # 偷来的
   - {"name": "[Cloudflare]Workers2", "server": "www.who.int", "port": 443, "type": "vless", "uuid": "574f7da0-12bc-454e-9c7b-df069f25d683", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "random", "ws-opts": {"headers": {"host": "1024.1024worker.link"}, "path": "/?ed=2048"}}
+  # 偷来的
+  - {"name": "[Cloudflare]Workers3", "type": "vless", "server": "edgetunnel.anycast.eu.org", "port": 18727, "uuid": "7424cbf8-5fb4-4ddb-818e-b7708ebafcce", "tls": false, "servername": "eer.tianjiang521.com", "network": "ws", "ws-opts": {"path": "/realname.1888.com.mo/ocrCheck", "headers": {"host": "eer.tianjiang521.com"}}}
