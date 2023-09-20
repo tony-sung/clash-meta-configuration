@@ -10,4 +10,4 @@ proxies:
   # 偷来的
   - {"name": "[Cloudflare]Workers2", "server": "www.who.int", "port": 443, "type": "vless", "uuid": "574f7da0-12bc-454e-9c7b-df069f25d683", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "random", "ws-opts": {"headers": {"host": "1024.1024worker.link"}, "path": "/?ed=2048"}}
   # 偷来的
-  - {"name": "[Cloudflare]Workers3", "server": "skk.moe", "port": 18727, "type": "vless", "uuid": "7424cbf8-5fb4-4ddb-818e-b7708ebafcce", "tls": false, "servername": "eer.tianjiang521.com", "network": "ws", "ws-opts": {"path": "/realname.1888.com.mo/ocrCheck", "headers": {"host": "eer.tianjiang521.com"}}}
+  - {"name": "[Cloudflare]Workers3", "server": "time.cloudflare.com", "port": 443, "type": "vless", "uuid": "7424cbf8-5fb4-4ddb-818e-b7708ebafcce", "tls": true, "udp": true, "client-fingerprint": "random", "servername": "eer.tianjiang521.com", "network": "ws", "ws-opts": {"path": "/realname.1888.com.mo/ocrCheck", "headers": {"host": "eer.tianjiang521.com"}}}
