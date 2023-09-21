@@ -3,4 +3,3 @@
 *.dat
 *.mmdb
 !mine.yaml
-*.py
