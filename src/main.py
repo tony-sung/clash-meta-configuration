@@ -20,7 +20,7 @@ def get_sublink_from_url(url, xpath):
         return(sub_link)
     except Exception:
         print(f"get_sublink_from_url error: {url}\t{xpath}")
-        return(False)
+        return False
 # get sublink content
 def get_content_from_sublink(url):
     try:
