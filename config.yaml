@@ -102,8 +102,7 @@ proxy-providers:
       url: 'http://www.gstatic.com/generate_204'
 
   clash-meta:
-    type: http
-    url: 'https://ghproxy.com/https://raw.githubusercontent.com/tony-sung/clash-meta-configuration/main/subscription/clash-meta.yaml'
+    type: file
     interval: 1800
     path: subscription/clash-meta.yaml
     health-check:

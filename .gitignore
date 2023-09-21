@@ -4,5 +4,4 @@
 *.mmdb
 !main.yaml
 !mine.yaml
-!clash-meta.yaml
-!main.py
+*.py
