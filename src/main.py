@@ -25,9 +25,9 @@ def get_sublink_from_url(url, xpath):
 def get_content_from_sublink(url):
     try:
         sub_content = requests.get(url).text
-        return(sub_content)
+        return sub_content
     except Exception:
-        return(False)
+        return False
 # get node from yaml
 def get_nodes_from_yaml(sub_content):
     try:
@@ -35,7 +35,7 @@ def get_nodes_from_yaml(sub_content):
         return(nodes)
     except Exception:
         print(f"get_nodes_from_yaml error: {sub_content}")
-        return(False)
+        return False
 # duplicates remove
 def duplicate_removel(node_content):
     print(type(node_content))
