@@ -12,10 +12,9 @@ url_list = {
         'xpath': '/html/body/div/section[1]/div/div/table/tbody/tr[2]/td[1]'
     }
 }
-# get sublink
 def get_sublink_from_url(url, xpath):
     try:
-        url_content = requests.get(url).text
+        url_content = requests.get(url, timeout=10).text
         sub_link = etree.HTML(url_content).xpath(f'{xpath}/text()')[0]
         return(sub_link)
     except Exception:
@@ -24,7 +23,7 @@ def get_sublink_from_url(url, xpath):
 # get sublink content
 def get_content_from_sublink(url):
     try:
-        sub_content = requests.get(url).text
+        sub_content = requests.get(url, timeout=10).text
         return sub_content
     except Exception:
         return False
