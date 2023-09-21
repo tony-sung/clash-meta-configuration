@@ -23,7 +23,7 @@ jobs:
 
       - name: Install Requirements
         run: |
-          pip install ./.github/dependence
+          pip install lxml yaml
 
       - name: Running Tasks
         run: |
