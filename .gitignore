@@ -1,6 +1,8 @@
-*
+*.yaml
+*.db
+*.dat
+*.mmdb
+!main.yaml
 !mine.yaml
 !clash-meta.yaml
-!config.yaml
-!.github/*
-!/src/main.py
+!main.py
