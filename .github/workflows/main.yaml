@@ -23,7 +23,7 @@ jobs:
 
       - name: Install Requirements
         run: |
-          pip install -r ./.github/dependence
+          pip install ./.github/dependence
 
       - name: Running Tasks
         run: |
