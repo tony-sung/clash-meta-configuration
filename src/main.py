@@ -52,11 +52,12 @@ if __name__ == "__main__":
         sub_link = get_sublink_from_url(url_list[name]['url'],url_list[name]['xpath'])
         if sub_link:
             sub_content = get_content_from_sublink(sub_link)
-        if 'proxies:' in sub_content:
-            node_content = get_nodes_from_yaml(sub_content)
-            sub_content_list.extend(node_content)
-        else:
-            continue
+        if sub_content:
+            if 'proxies:' in sub_content:
+                node_content = get_nodes_from_yaml(sub_content)
+                sub_content_list.extend(node_content)
+            else:
+                continue
     yaml_content = yaml.safe_load("proxies:")
     yaml_content['proxies'] = node_content
     yaml_content = duplicate_removel(yaml_content)
