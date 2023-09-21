@@ -68,7 +68,7 @@ proxy-groups:
       - mine
       - paimon
       - timell
-      - wanshanziwo
+      - clash-meta
 ####################################################################################################
 proxy-providers:
   mine:
@@ -101,11 +101,11 @@ proxy-providers:
       interval: 900
       url: 'http://www.gstatic.com/generate_204'
 
-  wanshanziwo:
+  clash-meta:
     type: http
-    url: 'https://wanshanziwo.eu.org/airport?rand=1HQoMAt6'
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/tony-sung/clash-meta-configuration/main/subscription/clash-meta.yaml'
     interval: 1800
-    path: subscription/wanshanziwo.yaml
+    path: subscription/clash-meta.yaml
     health-check:
       enable: true
       interval: 900

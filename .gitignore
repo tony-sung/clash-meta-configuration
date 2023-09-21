@@ -1,3 +1,6 @@
 *
 !mine.yaml
+!clash-meta.yaml
 !config.yaml
+!.github/*
+!/src/main.py
