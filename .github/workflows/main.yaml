@@ -23,7 +23,7 @@ jobs:
 
       - name: Install Requirements
         run: |
-          pip install lxml pyyaml
+          pip install lxml pyyaml requests
 
       - name: Running Tasks
         run: |
