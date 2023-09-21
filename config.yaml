@@ -103,7 +103,7 @@ proxy-providers:
 
   wanshanziwo:
     type: http
-    url: 'https://wanshanziwo.eu.org/airport?rand=BLTIgOdt'
+    url: 'https://wanshanziwo.eu.org/airport?rand=1HQoMAt6'
     interval: 1800
     path: subscription/wanshanziwo.yaml
     health-check:
