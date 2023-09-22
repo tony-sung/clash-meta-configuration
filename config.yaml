@@ -93,7 +93,7 @@ proxy-providers:
 
   timell:
     type: http
-    url: 'https://timell.pages.dev/clash/proxies'
+    url: 'https://timell.pages.dev/clash/proxies?speed=10'
     interval: 1800
     path: subscription/timell.yaml
     health-check:
