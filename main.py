@@ -4,6 +4,10 @@ import requests
 import yaml
 from lxml import etree
 
+headers = {
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.46"
+}
+proxies = {'http': 'http://localhost:7890', 'https': 'http://localhost:7890'}
 url_list = {
     'wanshanziwo_clash.meta': {
         'url': 'https://wanshanziwo.eu.org',
@@ -16,7 +20,7 @@ url_list = {
 }
 def get_sublink_from_url(url, xpath):
     try:
-        url_content = requests.get(url).text
+        url_content = requests.get(url, headers=headers, proxies=proxies).text
         sub_link = etree.HTML(url_content).xpath(f'{xpath}/text()')[0]
         return(sub_link)
     except Exception:
@@ -25,7 +29,7 @@ def get_sublink_from_url(url, xpath):
 # get sublink content
 def get_content_from_sublink(url):
     try:
-        sub_content = requests.get(url).text
+        sub_content = requests.get(url, headers=headers, proxies=proxies).text
         return sub_content
     except Exception:
         return False
