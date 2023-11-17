@@ -116,9 +116,8 @@ rules:
   - GEOIP,cn,DIRECT,no-resolve
   - GEOSITE,category-ads-all,REJECT
   - DOMAIN,www.bing.com,PROXY
-  - DOMAIN,sydney.bing.com,PROXY
-  - GEOSITE,github,PROXY
-  - GEOSITE,microsoft,DIRECT
+  - DOMAIN,sydney.bing.com,PROXY  
+  - GEOSITE,category-dev,PROXY
   - GEOSITE,google,PROXY
   - GEOSITE,cn,DIRECT
   - MATCH,PROXY
