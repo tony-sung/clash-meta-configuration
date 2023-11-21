@@ -69,6 +69,7 @@ proxy-groups:
       - paimon
       - timell
       - clash-meta
+      - chromego
 ####################################################################################################
 proxy-providers:
   mine:
@@ -105,6 +106,16 @@ proxy-providers:
     type: file
     interval: 1800
     path: subscription/clash-meta.yaml
+    health-check:
+      enable: true
+      interval: 900
+      url: 'http://www.gstatic.com/generate_204'
+
+  chromego:
+    type: http
+    url: 'https://mareep.netlify.app/sub/merged_warp_proxies_new.yaml'
+    interval: 1800
+    path: subscription/chromego.yaml
     health-check:
       enable: true
       interval: 900
