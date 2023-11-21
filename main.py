@@ -17,7 +17,7 @@ def get_sublink_from_url(url):
         url_content = requests.get(url, headers=headers, proxies=proxies).text
         content_line = url_content.split("\n")
         for line in content_line:
-            if str.startswith(line, "https://raw.githubusercontent.com/snakem982/proxypool/main/v2ray"):
+            if str.startswith(line, "https://raw.githubusercontent.com/snakem982/proxypool/main/clash"):
                 sub_link = line.split(" ")[0]
                 break
         return sub_link
