@@ -22,7 +22,7 @@ def get_sublink_from_url(url):
                 break
         return sub_link
     except Exception:
-        return 'Error'
+        return 'get_sublink_from_url Error'
 
 # get sublink content
 def get_content_from_sublink(url):
@@ -30,7 +30,7 @@ def get_content_from_sublink(url):
         sub_content = requests.get(url, headers=headers, proxies=proxies).text
         return sub_content
     except Exception:
-        return 'Error'
+        return 'get_content_from_sublink Error'
 
 # get node from yaml
 def get_nodes_from_yaml(sub_content):
@@ -41,18 +41,11 @@ def get_nodes_from_yaml(sub_content):
         print(f"get_nodes_from_yaml error: {sub_content}")
         return False
 
-# duplicates remove
-def duplicate_removel(node_content):
-    node_content_duplicated = []
-    if 'proxies' in node_content:
-        for node in node_content['proxies']:
-            if node not in node_content_duplicated:
-                node_content_duplicated.append(node)
-        node_content['proxies'] = node_content_duplicated
-    return node_content
-
-
 if __name__ == "__main__":
     sublink = get_sublink_from_url(url)
     sub_content = get_content_from_sublink(sublink)
-    open(f'{sys.path[0]}/subscription/clash-meta.yaml', 'w').write(sub_content)
+    yaml_content_raw = yaml.safe_load(sub_content)
+    yaml_content = yaml.safe_load("proxies:")
+    yaml_content['proxies'] = yaml_content_raw['proxies']
+    yaml_content = yaml.dump(yaml_content)
+    open(f'{sys.path[0]}/subscription/clash-meta.yaml', 'w').write(yaml_content)
