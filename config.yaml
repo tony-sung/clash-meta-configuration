@@ -36,7 +36,7 @@ mode: rule
 
 # Clash by default prints logs to STDOUT
 # info / warning / error / debug / silent
-log-level: silent
+log-level: info
 
 # When set to false, resolver won't translate hostnames to IPv6 addresses
 ipv6: true
