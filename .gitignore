@@ -3,3 +3,4 @@
 *.dat
 *.mmdb
 !mine.yaml
+!config*
