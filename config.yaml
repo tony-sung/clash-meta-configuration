@@ -84,9 +84,9 @@ proxy-providers:
 
   paimon:
     type: http
-    url: 'https://sub.pmsub.me/base64'
+    url: 'https://free.iam7.tk/clash/proxies'
     interval: 1800
-    path: subscription/paimon.yaml
+    path: subscription/iam7.yaml
     health-check:
       enable: true
       interval: 900
