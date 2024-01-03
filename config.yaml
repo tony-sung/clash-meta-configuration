@@ -68,6 +68,8 @@ proxy-groups:
       - mine
       - iam7
       - timell
+      - proxypool
+      - crazygeeky
       - clash-meta
       - chromego
 ####################################################################################################
@@ -94,9 +96,29 @@ proxy-providers:
 
   timell:
     type: http
-    url: 'https://timell.pages.dev/clash/proxies?speed=10'
+    url: 'https://timell.pages.dev/clash/proxies'
     interval: 1800
     path: subscription/timell.yaml
+    health-check:
+      enable: true
+      interval: 900
+      url: 'http://www.gstatic.com/generate_204'
+
+  proxypool:
+    type: http
+    url: 'https://proxypool.link/clash/proxies'
+    interval: 1800
+    path: subscription/proxypool.yaml
+    health-check:
+      enable: true
+      interval: 900
+      url: 'http://www.gstatic.com/generate_204'
+
+  crazygeeky:
+    type: http
+    url: 'https://proxy.crazygeeky.com/clash/proxies'
+    interval: 1800
+    path: subscription/crazygeeky.yaml
     health-check:
       enable: true
       interval: 900
