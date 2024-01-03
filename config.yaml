@@ -70,6 +70,7 @@ proxy-groups:
       - timell
       - proxypool
       - crazygeeky
+      - jingfu
       - clash-meta
       - chromego
 ####################################################################################################
