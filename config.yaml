@@ -97,7 +97,7 @@ proxy-providers:
 
   timell:
     type: http
-    url: 'https://timell.pages.dev/clash/proxies?speed=10'
+    url: 'https://timell.pages.dev/clash/proxies'
     interval: 1800
     path: subscription/timell.yaml
     health-check:
@@ -117,7 +117,7 @@ proxy-providers:
 
   crazygeeky:
     type: http
-    url: 'https://proxy.crazygeeky.com/clash/proxies?speed=10'
+    url: 'https://proxy.crazygeeky.com/clash/proxies'
     interval: 1800
     path: subscription/crazygeeky.yaml
     health-check:
@@ -127,7 +127,7 @@ proxy-providers:
 
   jingfu:
     type: http
-    url: 'https://free.jingfu.cf/clash/proxies?speed=10'
+    url: 'https://free.jingfu.cf/clash/proxies'
     interval: 1800
     path: subscription/jingfu.yaml
     health-check:
