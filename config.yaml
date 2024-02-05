@@ -66,13 +66,15 @@ proxy-groups:
     type: select
     use:
       - mine
-      - iam7
+      - dongchengjie
       - timell
       - proxypool
       - crazygeeky
       - jingfu
       - clash-meta
       - chromego
+      - shunfeng
+      - xrayvip
 ####################################################################################################
 proxy-providers:
   mine:
@@ -85,11 +87,11 @@ proxy-providers:
       interval: 900
       url: 'http://www.gstatic.com/generate_204'
 
-  iam7:
+  dongchengjie:
     type: http
-    url: 'https://free.iam7.tk/clash/proxies'
+    url: 'https://raw.githubusercontent.com/dongchengjie/airport/main/nodes/dongchengjie.yaml'
     interval: 1800
-    path: subscription/iam7.yaml
+    path: subscription/dongchengjie.yaml
     health-check:
       enable: true
       interval: 900
@@ -154,6 +156,25 @@ proxy-providers:
       interval: 900
       url: 'http://www.gstatic.com/generate_204'
 
+  shunfeng:
+    type: http
+    url: 'https://shunfeng.2424014450.workers.dev/'
+    interval: 1800
+    path: subscription/shunfeng.yaml
+    health-check:
+      enable: true
+      interval: 900
+      url: 'http://www.gstatic.com/generate_204'
+
+  xrayvip:
+    type: http
+    url: 'https://www.xrayvip.com/free.yaml'
+    interval: 1800
+    path: subscription/xrayvip.yaml
+    health-check:
+      enable: true
+      interval: 900
+      url: 'http://www.gstatic.com/generate_204'
 ####################################################################################################
 rules:
   - GEOIP,lan,DIRECT,no-resolve
