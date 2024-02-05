@@ -69,7 +69,6 @@ proxy-groups:
       - dongchengjie
       - timell
       - crazygeeky
-      - jingfu
       - clash-meta
       - chromego
       - shunfeng
@@ -111,16 +110,6 @@ proxy-providers:
     url: 'https://proxy.crazygeeky.com/clash/proxies'
     interval: 1800
     path: subscription/crazygeeky.yaml
-    health-check:
-      enable: true
-      interval: 900
-      url: 'http://www.gstatic.com/generate_204'
-
-  jingfu:
-    type: http
-    url: 'https://free.jingfu.cf/clash/proxies'
-    interval: 1800
-    path: subscription/jingfu.yaml
     health-check:
       enable: true
       interval: 900
