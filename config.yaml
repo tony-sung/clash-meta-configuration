@@ -68,7 +68,6 @@ proxy-groups:
       - mine
       - dongchengjie
       - timell
-      - proxypool
       - crazygeeky
       - jingfu
       - clash-meta
@@ -102,16 +101,6 @@ proxy-providers:
     url: 'https://timell.pages.dev/clash/proxies'
     interval: 1800
     path: subscription/timell.yaml
-    health-check:
-      enable: true
-      interval: 900
-      url: 'http://www.gstatic.com/generate_204'
-
-  proxypool:
-    type: http
-    url: 'https://proxypool.link/clash/proxies'
-    interval: 1800
-    path: subscription/proxypool.yaml
     health-check:
       enable: true
       interval: 900
