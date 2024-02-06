@@ -69,7 +69,6 @@ proxy-groups:
       - dongchengjie
       - timell
       - crazygeeky
-      - clash-meta
       - chromego
       - shunfeng
       - xrayvip
@@ -110,15 +109,6 @@ proxy-providers:
     url: 'https://proxy.crazygeeky.com/clash/proxies'
     interval: 1800
     path: subscription/crazygeeky.yaml
-    health-check:
-      enable: true
-      interval: 900
-      url: 'http://www.gstatic.com/generate_204'
-
-  clash-meta:
-    type: file
-    interval: 1800
-    path: subscription/clash-meta.yaml
     health-check:
       enable: true
       interval: 900
