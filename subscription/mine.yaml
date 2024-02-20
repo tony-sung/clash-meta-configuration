@@ -3,7 +3,4 @@ proxies:
   - {"name": "[Cloudflare]Pages", "server": "www.who.int", "port": 8443, "type": "vless", "uuid": "0c0387eb-67cd-4e0e-b73f-0fd9c2df70cc", "network": "ws", "tls": true, "udp": true, "ws-opts": {"headers": {"host": "proxy-ekj.pages.dev"}, "path": "/?ed=2048"}, "client-fingerprint": "random"}
   # worker
   - {"name": "[Cloudflare]Workers", "server": "www.who.int", "port": 443, "type": "vless", "uuid": "cbee77ef-fb00-4c4d-8f2d-8a4408ef24a8", "network": "ws", "tls": true, "udp": true, "ws-opts": {"headers": {"host": "proxy.songtao1873.workers.dev"}, "path": "/?ed=2048"}, "client-fingerprint": "random", }
-  # warp zero-trust
-  - {"name": "[WARP]zero-trust", "type": "wireguard", "server": "[2606:4700:d0::f1c0:4744:5096:a98e]", "port": 8742, "udp": true, "ip": "172.16.0.2", "private-key": "YATIpkHDd986+8jpi0rDSjiPQA9OsBpnX7vTstyZs0c=", "public-key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=", "mtu": 1280}
-  # warp plus
-  - {"name": "[WARP]plus", "type": "wireguard", "server": "[2606:4700:d0::f1c0:4744:5096:a98e]", "port": 8742, "udp": true, "ip": "172.16.0.2", "ipv6": "2606:4700:110:80ce:1cba:fcdb:281:693c", "private-key": "eND7fUqICzUE5kHzpipVDxvMxy/4gP/NxyuyoJLvpUY=", "public-key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=", "mtu": 1280}
+  
