@@ -97,7 +97,7 @@ proxy-providers:
   dedyn-vless:
     type: http
     url: 'https://vless.fxxk.dedyn.io/auto'
-    interval: 1800
+    interval: 3600
     path: subscription/dedyn-vless.yaml
     health-check:
       enable: true
@@ -107,7 +107,7 @@ proxy-providers:
   dedyn-vmess:
     type: http
     url: 'https://vmess.fxxk.dedyn.io/auto'
-    interval: 1800
+    interval: 3600
     path: subscription/dedyn-vmess.yaml
     health-check:
       enable: true
