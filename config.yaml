@@ -67,7 +67,7 @@ proxy-groups:
     use:
       - mine
       - dongchengjie
-      - timell
+      - dedyn
       - chromego
       - shunfeng
       - xrayvip
@@ -93,11 +93,11 @@ proxy-providers:
       interval: 900
       url: 'http://www.gstatic.com/generate_204'
 
-  timell:
+  dedyn:
     type: http
-    url: 'https://timell.pages.dev/clash/proxies'
+    url: 'https://vless.fxxk.dedyn.io/auto'
     interval: 1800
-    path: subscription/timell.yaml
+    path: subscription/dedyn.yaml
     health-check:
       enable: true
       interval: 900
