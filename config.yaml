@@ -85,7 +85,7 @@ proxy-providers:
 
   dongchengjie:
     type: http
-    url: 'https://raw.githubusercontent.com/dongchengjie/airport/main/nodes/dongchengjie.yaml'
+    url: 'https://raw.githubusercontent.com/dongchengjie/airport/main/subs/dongchengjie.yaml'
     interval: 1800
     path: subscription/dongchengjie.yaml
     health-check:
@@ -105,7 +105,7 @@ proxy-providers:
 
   chromego:
     type: http
-    url: 'https://mareep.netlify.app/sub/shadowrocket_base64.txt'
+    url: 'https://mareep.netlify.app/sub/merged_proxies_new.yaml'
     interval: 1800
     path: subscription/chromego.yaml
     health-check:
