@@ -67,7 +67,8 @@ proxy-groups:
     use:
       - mine
       - dongchengjie
-      - dedyn
+      - dedyn-vless
+      - dedyn-vmess
       - chromego
       - shunfeng
       - xrayvip
@@ -93,11 +94,21 @@ proxy-providers:
       interval: 900
       url: 'http://www.gstatic.com/generate_204'
 
-  dedyn:
+  dedyn-vless:
     type: http
     url: 'https://vless.fxxk.dedyn.io/auto'
     interval: 1800
-    path: subscription/dedyn.yaml
+    path: subscription/dedyn-vless.yaml
+    health-check:
+      enable: true
+      interval: 900
+      url: 'http://www.gstatic.com/generate_204'
+
+  dedyn-vmess:
+    type: http
+    url: 'https://vmess.fxxk.dedyn.io/auto'
+    interval: 1800
+    path: subscription/dedyn-vmess.yaml
     health-check:
       enable: true
       interval: 900
