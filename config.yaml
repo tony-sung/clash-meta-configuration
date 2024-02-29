@@ -97,7 +97,7 @@ proxy-providers:
 
   combine:
     type: http
-    url: 'https://raw.githubusercontent.com/WilliamStar007/ClashX-V2Ray-TopFreeProxy/main/combine/v2ray.config.txt'
+    url: 'https://raw.githubusercontent.com/WilliamStar007/ClashX-V2Ray-TopFreeProxy/main/combine/clash.config.yaml'
     interval: 1800
     path: subscription/combine.yaml
     health-check:
