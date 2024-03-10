@@ -71,7 +71,6 @@ proxy-groups:
       - dedyn-vmess
       - chromego
       - shunfeng
-      - xrayvip
 ####################################################################################################
 proxy-providers:
   mine:
@@ -134,15 +133,6 @@ proxy-providers:
       interval: 900
       url: 'http://www.gstatic.com/generate_204'
 
-  xrayvip:
-    type: http
-    url: 'https://www.xrayvip.com/free.yaml'
-    interval: 1800
-    path: subscription/xrayvip.yaml
-    health-check:
-      enable: true
-      interval: 900
-      url: 'http://www.gstatic.com/generate_204'
 ####################################################################################################
 rules:
   - GEOIP,lan,DIRECT,no-resolve
